@@ -1,4 +1,4 @@
-package com.example.kessseller.Java;
+package com.example.kessseller.XML;
 
 import android.os.Bundle;
 import android.widget.LinearLayout;
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.kessseller.Java.Viewpager;
 import com.example.kessseller.XML.BookingMyorder;
 import com.example.kessseller.XML.OrderMyorder;
 import com.example.kessseller.R;

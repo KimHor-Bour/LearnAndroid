@@ -1,4 +1,4 @@
-package com.example.kessseller.Java;
+package com.example.kessseller.Test;
 
 import android.app.Activity;
 import android.os.Bundle;
