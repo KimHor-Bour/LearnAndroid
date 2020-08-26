@@ -18,7 +18,7 @@
         <LinearLayout
             android:clickable="true"
             android:layout_margin="10dp"
-            android:id="@+id/filterbtn"
+            android:id="@+id/filterbtntype"
             android:layout_width="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -31,7 +31,7 @@
                 android:src="@drawable/ic_filter_foreground"
                 />
             <TextView
-                android:id="@+id/type_booking"
+                android:id="@+id/type_status"
                 android:paddingRight="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,10 +74,12 @@
         app:layout_constraintTop_toBottomOf="@+id/t">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/my_rebooking"
+            android:padding="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:id="@+id/my_restatus"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="vertical"
+            app:spanCount="3"
             />
     </LinearLayout>
 

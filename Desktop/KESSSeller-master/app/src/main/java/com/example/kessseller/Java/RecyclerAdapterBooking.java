@@ -13,10 +13,10 @@ import com.example.kessseller.R;
 
 import java.util.List;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.DataViewHolder> {
-    List<DataRecyclerView.DataRecycler> datas;
-    public RecyclerAdapter(List<DataRecyclerView.DataRecycler> datas){
-        this.datas = datas;
+public class RecyclerAdapterBooking extends RecyclerView.Adapter<RecyclerAdapterBooking.DataViewHolder> {
+    List<DataRecyclerViewBooking.DataRecycler> datas;
+    public RecyclerAdapterBooking(List<DataRecyclerViewBooking.DataRecycler> data) {
+
     }
 
 

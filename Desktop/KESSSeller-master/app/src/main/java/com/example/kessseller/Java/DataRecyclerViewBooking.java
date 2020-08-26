@@ -3,7 +3,7 @@ package com.example.kessseller.Java;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataRecyclerView {
+public class DataRecyclerViewBooking {
     public class  DataRecycler{
         String user;
         String date;
@@ -27,7 +27,7 @@ public class DataRecyclerView {
         }
     }
 
-    public DataRecyclerView() {
+    public DataRecyclerViewBooking() {
         initData();
     }
 
@@ -48,8 +48,6 @@ public class DataRecyclerView {
                 "Table Number 09","KESS pay","11$"));
     }
 
-    public List<DataRecycler> getData() {
-        return data;
-    }
+
 }
 
