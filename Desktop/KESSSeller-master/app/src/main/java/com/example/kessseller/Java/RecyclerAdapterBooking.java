@@ -15,7 +15,8 @@ import java.util.List;
 
 public class RecyclerAdapterBooking extends RecyclerView.Adapter<RecyclerAdapterBooking.DataViewHolder> {
     List<DataRecyclerViewBooking.DataRecycler> datas;
-    public RecyclerAdapterBooking(List<DataRecyclerViewBooking.DataRecycler> data) {
+    public RecyclerAdapterBooking(List<DataRecyclerViewBooking.DataRecycler> datas) {
+        this.datas=datas;
 
     }
 
@@ -43,6 +44,7 @@ public class RecyclerAdapterBooking extends RecyclerView.Adapter<RecyclerAdapter
     @Override
     public int getItemCount() {
         return datas.size();
+//        return 0;
     }
 
     @Override

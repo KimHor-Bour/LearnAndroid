@@ -16,11 +16,12 @@ public class DataRecyclerViewStatus {
         }
     }
     public DataRecyclerViewStatus() {
-        initData();
+
+        initDataStatus();
     }
 
-    private List<DataRecyclerViewStatus.DataStatus> data;
-    private void  initData(){
+    private List<DataStatus> data;
+    private void  initDataStatus(){
         data = new ArrayList<>();
         data.add(new DataStatus("1","2","1st"));
         data.add(new DataStatus("1","2","1st"));
@@ -36,7 +37,8 @@ public class DataRecyclerViewStatus {
 
     }
 
-    public List<DataRecyclerViewStatus.DataStatus> getData() {
+    public List<DataStatus> getData() {
+
         return data;
     }
 }

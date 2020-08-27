@@ -28,6 +28,7 @@ public class DataRecyclerViewBooking {
     }
 
     public DataRecyclerViewBooking() {
+
         initData();
     }
 
@@ -48,6 +49,8 @@ public class DataRecyclerViewBooking {
                 "Table Number 09","KESS pay","11$"));
     }
 
-
+    public List<DataRecycler> getData() {
+        return data;
+    }
 }
 
