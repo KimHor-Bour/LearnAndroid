@@ -4,10 +4,11 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background= "#E0E0E0">
+    android:background= "#E5E4E2">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1">
      <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="match_parent"
@@ -17,7 +18,7 @@
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:background="@drawable/border_shadow_coner"
+             android:background="@drawable/border_radius_top"
              android:orientation="vertical">
 
              <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,6 +28,7 @@
                  android:id="@+id/tb1"
                  >
                  <TextView
+                     android:layout_marginTop="7dp"
                      android:id="@+id/book_detail"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
@@ -38,15 +40,16 @@
                      android:gravity="left"/>
 
                  <ImageView
-                     android:layout_width="10dp"
-                     android:layout_height="15dp"
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
                      android:layout_alignParentEnd="true"
-                     android:layout_marginStart="200dp"
-                     android:layout_marginEnd="4dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginEnd="10dp"
                      android:layout_toEndOf="@+id/book_detail"
                      android:src="@drawable/ic_close_foreground"
-                     app:layout_constraintStart_toEndOf="@id/book_detail"
-                     app:layout_constraintTop_toTopOf="@id/tb1"/>
+                     app:layout_constraintEnd_toEndOf="@id/tb1"
+                     app:layout_constraintTop_toTopOf="@id/tb1" />
+
                  <TextView
                      android:id="@+id/id_booking"
                      android:layout_width="wrap_content"
@@ -65,7 +68,7 @@
                      android:text="Mon, 03/Agu/2020 4:57 PM"/>
                  <TextView
                      android:id="@+id/shop_name"
-                     android:layout_marginTop="20dp"
+                     android:layout_marginTop="10dp"
                      android:layout_marginBottom="10dp"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
@@ -78,8 +81,8 @@
                  <ImageView
                      android:id="@+id/image_type"
                      android:layout_marginTop="5dp"
-                     android:layout_width="100dp"
-                     android:layout_height="120dp"
+                     android:layout_width="80dp"
+                     android:layout_height="90dp"
                      android:src="@drawable/download"
                      app:layout_constraintTop_toBottomOf="@id/shop_name"
                      app:layout_constraintStart_toStartOf="@id/tb1"/>
@@ -541,33 +544,38 @@
                      app:layout_constraintTop_toBottomOf="@id/phone_number"
                      app:layout_constraintStart_toStartOf="@id/tb6"
                      />
-                 <Button
-                     android:text="Reject"
-                     android:id="@+id/btn_reject"
-                     android:layout_marginTop="20dp"
-                     android:layout_marginStart="40dp"
-                     android:background="@drawable/bacground_filter"
-                     android:layout_width="100dp"
-                     android:layout_height="30dp"
-                     android:textColor="@color/colorPurplePink"
-                     app:layout_constraintStart_toStartOf="@id/tb6"
-                     app:layout_constraintTop_toBottomOf="@id/add"/>
-                 <Button
-                     android:text="Accept"
-                     android:id="@+id/btn_accept"
-                     android:layout_marginTop="20dp"
-                     android:layout_marginStart="80dp"
-                     android:background="@drawable/border_radius_green"
-                     android:layout_width="100dp"
-                     android:layout_height="30dp"
-                     android:textColor="@color/colorWhite"
-                     app:layout_constraintStart_toEndOf="@id/btn_reject"
-                     app:layout_constraintTop_toBottomOf="@id/add"/>
 
              </androidx.constraintlayout.widget.ConstraintLayout>
          </LinearLayout>
-
-
      </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_marginEnd="50dp"
+            android:layout_gravity="center"
+            android:text="Reject"
+            android:id="@+id/btn_reject"
+            android:background="@drawable/bacground_filter"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textColor="@color/colorPurplePink"
+            />
+        <Button
+            android:layout_marginStart="50dp"
+            android:layout_margin="10dp"
+            android:text="Accept"
+            android:id="@+id/btn_accept"
+            android:background="@drawable/border_radius_green"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textColor="@color/colorWhite"
+            />
+
+    </LinearLayout>
 </LinearLayout>

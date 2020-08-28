@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.kessseller.Java.DataRecyclerViewBooking;
+import com.example.kessseller.Data.DataRecyclerViewBooking;
 import com.example.kessseller.Java.RecyclerAdapterBooking;
 import com.example.kessseller.R;
 

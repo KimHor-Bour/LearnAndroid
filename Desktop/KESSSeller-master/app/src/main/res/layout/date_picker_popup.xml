@@ -38,32 +38,9 @@
         app:picker_stepSizeMinutes="5"
         app:picker_visibleItemCount="7" />
 
-
-
-
-<!--        android:id="@+id/singlepicker"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="300dp"-->
-<!--        android:padding="20dp"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/okbutton"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/txt_datetime"-->
-<!--        app:layout_constraintVertical_bias="0.0"-->
-<!--        app:picker_curved="true"-->
-<!--        app:picker_curvedMaxAngle="20"-->
-<!--        app:picker_cyclic="true"-->
-<!--        app:picker_dayCount="31"-->
-<!--        app:picker_itemSpacing="1dp"-->
-<!--        app:picker_mustBeOnFuture="true"-->
-<!--        app:picker_selectorColor="@android:color/transparent"-->
-<!--        app:picker_stepSizeHours="1"-->
-<!--        app:picker_stepSizeMinutes="1"-->
-<!--        app:picker_visibleItemCount="7" />-->
-
     <Button
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:id="@+id/okbutton"
         android:background="@drawable/border_radius_bg_purplepink"
         android:layout_width="100dp"
