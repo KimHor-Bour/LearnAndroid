@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPurplePink"
+            android:id="@+id/toolbar"
+            android:gravity="center"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con_tool"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/txt_tool"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="MY ITEMS"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@id/con_tool"
+                    app:layout_constraintEnd_toEndOf="@id/con_tool"
+                    app:layout_constraintTop_toTopOf="@id/con_tool"
+                    app:layout_constraintBottom_toBottomOf="@id/con_tool"
+                    />
+                <ImageView
+                    android:paddingEnd="20dp"
+                    android:id="@+id/add_item"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/add_foreground"
+                    app:layout_constraintEnd_toEndOf="@id/con_tool"
+                    app:layout_constraintTop_toTopOf="@id/con_tool"
+                    app:layout_constraintBottom_toBottomOf="@id/con_tool"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bacground_filter">
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/search_foreground"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

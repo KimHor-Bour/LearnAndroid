@@ -47,6 +47,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".XML.AppointmentScreen" />
+        <activity android:name=".XML.BottomNavigationScreen" />
 
     </application>
 
