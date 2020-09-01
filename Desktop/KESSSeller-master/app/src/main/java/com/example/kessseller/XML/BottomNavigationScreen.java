@@ -8,6 +8,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.kessseller.Java.ItemDataTypeEvent;
+import com.example.kessseller.Java.ItemDataTypeRoom;
+import com.example.kessseller.Java.ItemDataTypeTable;
 import com.example.kessseller.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -36,10 +39,10 @@ public class BottomNavigationScreen extends AppCompatActivity implements BottomN
                 fragment = new MyItemsBooking();
                 break;
             case R.id.navi_cupon:
-                fragment = new OrderMyorder();
+                fragment = new ItemDataTypeRoom();
                 break;
             case R.id.navi_account:
-                fragment = new OrderMyorder();
+                fragment = new ItemDataTypeEvent();
                 break;
         }
         return loadFragment(fragment);

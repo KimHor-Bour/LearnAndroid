@@ -1,4 +1,4 @@
-package com.example.kessseller.Java;
+package com.example.kessseller.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

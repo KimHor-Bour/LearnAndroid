@@ -32,6 +32,23 @@
                     app:layout_constraintTop_toTopOf="@id/con_tool"
                     app:layout_constraintBottom_toBottomOf="@id/con_tool"
                     />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/download"
+                    app:layout_constraintEnd_toStartOf="@id/add_item"
+                    app:layout_constraintTop_toTopOf="@id/con_tool"
+                    app:layout_constraintBottom_toBottomOf="@id/con_tool"
+                    />
+
                 <ImageView
                     android:paddingEnd="20dp"
                     android:id="@+id/add_item"
@@ -46,25 +63,64 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
     <LinearLayout
+        android:background="@color/colorBlur"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/bacground_filter">
+            android:background="@drawable/border_search">
             <ImageView
-                android:layout_height="30dp"
-                android:layout_width="30dp"
+                android:padding="5dp"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
                 android:src="@drawable/search_foreground"/>
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search"/>
+                android:hint="Search"
+                android:textSize="14dp"
+                android:textColorHint="@color/colorPurplePink"
+                android:textColor="@color/colorPurplePink"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/circle_boder_purple">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/filter1"
+                />
         </LinearLayout>
 
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <fragment
+            android:id="@+id/tab_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            class="com.example.kessseller.XML.ITemTabType"
+            />
+        <fragment
+            android:id="@+id/data_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.example.kessseller.Java.ItemDataTypeTable"/>
     </LinearLayout>
 
 </LinearLayout>

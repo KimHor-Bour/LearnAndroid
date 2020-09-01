@@ -28,10 +28,8 @@ public class DataRecyclerViewBooking {
     }
 
     public DataRecyclerViewBooking() {
-
         initData();
     }
-
     private List<DataRecycler> data;
     private void  initData(){
         data = new ArrayList<>();
@@ -52,5 +50,9 @@ public class DataRecyclerViewBooking {
     public List<DataRecycler> getData() {
         return data;
     }
+
+
+
+
 }
 

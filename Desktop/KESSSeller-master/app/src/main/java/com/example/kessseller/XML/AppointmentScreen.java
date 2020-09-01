@@ -12,7 +12,7 @@ public class AppointmentScreen extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.appointment);
+        setContentView(R.layout.cardview_item_table);
 
 
     }
