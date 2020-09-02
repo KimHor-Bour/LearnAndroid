@@ -10,8 +10,6 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kessseller.Data.DataItemBookingEvent;
-import com.example.kessseller.Data.DataItemBookingRoom;
-import com.example.kessseller.Data.DataItemTableBooking;
 import com.example.kessseller.R;
 
 import java.util.List;
@@ -27,7 +25,7 @@ public class AdapterOfItemEvent extends RecyclerView.Adapter<AdapterOfItemEvent.
     @NonNull
     @Override
     public DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_item_table, parent , false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_item_event, parent , false);
         DataViewHolder dataViewHolder = new DataViewHolder(v);
         return dataViewHolder;
     }
@@ -35,11 +33,11 @@ public class AdapterOfItemEvent extends RecyclerView.Adapter<AdapterOfItemEvent.
     @Override
     public void onBindViewHolder(@NonNull DataViewHolder dataViewHolder, int position) {
         dataViewHolder.dataEventName.setText(dataItemEvents.get(position).event_name);
-        dataViewHolder.dataTicket.setText(dataItemEvents.get(position).ticket);
-        dataViewHolder.dataPrice.setText(dataItemEvents.get(position).ticket_price);
-        dataViewHolder.dataSpecialPrice.setText(dataItemEvents.get(position).special_price_event);
-        dataViewHolder.dataStartDate.setText(dataItemEvents.get(position).start_date_event);
-        dataViewHolder.dataEndDate.setText(dataItemEvents.get(position).end_date_event);
+        dataViewHolder.dataEventTicket.setText(dataItemEvents.get(position).event_ticket);
+        dataViewHolder.dataEventPrice.setText(dataItemEvents.get(position).event_price);
+        dataViewHolder.dataEventSpecialPrice.setText(dataItemEvents.get(position).event_specialprice);
+        dataViewHolder.dataEventStartDate.setText(dataItemEvents.get(position).event_startdate);
+        dataViewHolder.dataEventEndDate.setText(dataItemEvents.get(position).event_enddate);
 
     }
 
@@ -59,22 +57,22 @@ public class AdapterOfItemEvent extends RecyclerView.Adapter<AdapterOfItemEvent.
     public static class DataViewHolder extends RecyclerView.ViewHolder {
         CardView cv;
         TextView dataEventName;
-        TextView dataTicket;
-        TextView dataPrice;
-        TextView dataSpecialPrice;
-        TextView dataStartDate;
-        TextView dataEndDate;
+        TextView dataEventTicket;
+        TextView dataEventPrice;
+        TextView dataEventSpecialPrice;
+        TextView dataEventStartDate;
+        TextView dataEventEndDate;
 //        TextView dataDescription;
 
         DataViewHolder(View itemView){
             super(itemView);
             cv = (CardView)itemView.findViewById(R.id.card_event_id);
             dataEventName = (TextView)itemView.findViewById(R.id.event_name);
-            dataTicket = (TextView)itemView.findViewById(R.id.ticket);
-            dataPrice = (TextView)itemView.findViewById(R.id.event_price);
-            dataSpecialPrice = (TextView)itemView.findViewById(R.id.event_special_price);
-            dataStartDate = (TextView)itemView.findViewById(R.id.start_date_event);
-            dataEndDate = (TextView)itemView.findViewById(R.id.end_date);
+            dataEventTicket = (TextView)itemView.findViewById(R.id.event_ticket);
+            dataEventPrice = (TextView)itemView.findViewById(R.id.event_price);
+            dataEventSpecialPrice = (TextView)itemView.findViewById(R.id.event_specialprice);
+            dataEventStartDate = (TextView)itemView.findViewById(R.id.event_statedate);
+            dataEventEndDate = (TextView)itemView.findViewById(R.id.event_enddate);
 //            dataDescription = (TextView)itemView.findViewById(R.id.);
 
         }

@@ -7,21 +7,21 @@ public class DataItemBookingEvent {
     public class DataItemEvent{
         //data items of table
         public String event_name;
-        public String ticket;
-        public String ticket_price;
-        public String special_price_event;
-        public String start_date_event;
-        public String end_date_event;
-        public String description_event;
+        public String event_ticket;
+        public String event_price;
+        public String event_specialprice;
+        public String event_startdate;
+        public String event_enddate;
+        public String event_description;
 
-        DataItemEvent(String event_name, String ticket, String ticket_price,String special_price_event,String start_date_event, String end_date_event,String description_event){
+        DataItemEvent(String event_name, String event_ticket, String event_price,String event_specialprice,String event_startdate, String event_enddate,String event_description){
             this.event_name = event_name;
-            this.ticket = ticket;
-            this.ticket_price = ticket_price;
-            this.special_price_event = special_price_event;
-            this.start_date_event= start_date_event;
-            this.end_date_event = end_date_event;
-            this.description_event = description_event;
+            this.event_ticket = event_ticket;
+            this.event_price = event_price;
+            this.event_specialprice = event_specialprice;
+            this.event_startdate= event_startdate;
+            this.event_enddate = event_enddate;
+            this.event_description = event_description;
         }
 
     }

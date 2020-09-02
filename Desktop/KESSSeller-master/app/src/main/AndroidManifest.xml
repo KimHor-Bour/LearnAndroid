@@ -47,7 +47,28 @@
             </intent-filter>
         </activity>
         <activity android:name=".XML.AppointmentScreen" />
-        <activity android:name=".XML.BottomNavigationScreen" />
+        <activity android:name=".Test.Test"  >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".XML.CreateItemRoom" >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".XML.CreatItemTable" >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".XML.ITemTabType" />
 
     </application>
 

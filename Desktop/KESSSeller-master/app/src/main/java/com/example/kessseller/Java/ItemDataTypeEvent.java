@@ -12,11 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kessseller.Adapter.AdapterOfItemEvent;
-import com.example.kessseller.Adapter.AdapterOfItemRoom;
 import com.example.kessseller.Data.DataItemBookingEvent;
-import com.example.kessseller.Data.DataItemBookingRoom;
-import com.example.kessseller.Data.DataItemTableBooking;
-import com.example.kessseller.Adapter.AdapterOfItemTable;
 import com.example.kessseller.R;
 
 import java.util.List;

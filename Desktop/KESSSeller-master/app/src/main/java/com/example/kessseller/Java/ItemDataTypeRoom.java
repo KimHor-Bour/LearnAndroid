@@ -1,9 +1,11 @@
 package com.example.kessseller.Java;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,7 +29,7 @@ public class ItemDataTypeRoom extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.item_data,container,false);
         DataItemBookingRoom dataItemBookingRoom = new DataItemBookingRoom();
-        dataItemRooms = dataItemBookingRoom.getData_tableitem();
+        dataItemRooms = dataItemBookingRoom.getData_roomitem();
         recyclerView = (RecyclerView)view.findViewById(R.id.re_item);
         recyclerView.setHasFixedSize(true);
 
@@ -38,6 +40,11 @@ public class ItemDataTypeRoom extends Fragment {
 
         AdapterOfItemRoom adapterOfItemRoom = new AdapterOfItemRoom(dataItemRooms);
         recyclerView.setAdapter(adapterOfItemRoom);
+
+//        TextView tv = (TextView)view.findViewById(R.id.room_price);
+//        tv.setText("Hello");
+//        tv.setPaintFlags(tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
         return view;
 
     }

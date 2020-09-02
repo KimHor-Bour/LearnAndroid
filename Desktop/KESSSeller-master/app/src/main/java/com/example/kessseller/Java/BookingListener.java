@@ -1,11 +1,11 @@
 package com.example.kessseller.Java;
 
 
-import com.example.kessseller.Data.DataRecyclerViewStatus;
+import com.example.kessseller.Data.DataItemBookingRoom;
 
 import java.util.Date;
 
 public interface BookingListener {
-    void onItemClick(DataRecyclerViewStatus.DataStatus dataStatus);
+    void onItemClick(DataItemBookingRoom.DataItemRoom dataItemRoom);
     void onAccept(Date date);
 }

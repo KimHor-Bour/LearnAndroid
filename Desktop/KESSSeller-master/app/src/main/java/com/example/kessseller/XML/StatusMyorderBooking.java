@@ -17,10 +17,10 @@ import androidx.fragment.app.Fragment;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.kessseller.Data.DataItemBookingRoom;
 import com.example.kessseller.Java.BTSDataStatus;
 import com.example.kessseller.Java.BookingListener;
 import com.example.kessseller.Java.ButtonSheetDateandTime;
-import com.example.kessseller.Data.DataRecyclerViewStatus;
 import com.example.kessseller.Adapter.RecyclerAdapterStatus;
 import com.example.kessseller.R;
 
@@ -32,7 +32,7 @@ public class StatusMyorderBooking extends Fragment implements View.OnClickListen
     AlertDialog alertDialog;
     String[] values = {"Table","Room","Event",};
     TextView textView;
-    List<DataRecyclerViewStatus.DataStatus> statuses;
+    List<DataItemBookingRoom.DataItemRoom> dataItemRooms;
     View clickitem;
     BTSDataStatus btsDataStatus;
     //    RecyclerAdapter recyclerAdapter;
@@ -47,7 +47,7 @@ public class StatusMyorderBooking extends Fragment implements View.OnClickListen
 
     private BookingListener bookingListener = new BookingListener() {
         @Override
-        public void onItemClick(DataRecyclerViewStatus.DataStatus dataStatus) {
+        public void onItemClick(DataItemBookingRoom.DataItemRoom dataItemRoom) {
 //            System.out.print("click");
             BTSDataStatus btsDataStatus = new BTSDataStatus(context);
             btsDataStatus.show(getFragmentManager(),BTSDataStatus.class.getSimpleName());
@@ -66,18 +66,18 @@ public class StatusMyorderBooking extends Fragment implements View.OnClickListen
     @Nullable
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable final Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.status_myorder, container, false);
-        DataRecyclerViewStatus dataRecyclerViewStatus = new DataRecyclerViewStatus();
-        statuses = dataRecyclerViewStatus.getData();
+        DataItemBookingRoom dataItemBookingRoom = new DataItemBookingRoom();
+        dataItemRooms = dataItemBookingRoom.getData_roomitem();
         recyclerView = (RecyclerView) rootView.findViewById(R.id.my_restatus);
 
         textView = rootView.findViewById(R.id.type_status);
         textView.setText(values[0]);
 
-        RecyclerAdapterStatus recyclerAdapterStatus = new RecyclerAdapterStatus(statuses);
+        RecyclerAdapterStatus recyclerAdapterStatus = new RecyclerAdapterStatus(dataItemRooms);
 
         recyclerView.setAdapter(recyclerAdapterStatus);
 
-        RecyclerAdapterStatus recyclerAdapterStatus1 = new RecyclerAdapterStatus(statuses);
+        RecyclerAdapterStatus recyclerAdapterStatus1 = new RecyclerAdapterStatus(dataItemRooms);
         recyclerAdapterStatus.setBookinglistener(bookingListener);
         recyclerView.setAdapter(recyclerAdapterStatus);
         linearLayout = (LinearLayout)rootView.findViewById(R.id.filterbtntype);

@@ -8,7 +8,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="15dp"
-        android:id="@+id/card_event_id"
+        android:id="@+id/card_room_id"
         android:background="@drawable/border_grey_radius"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
 
             <ImageView
                 android:background="@color/colorBlack"
-                android:id="@+id/img_event"
+                android:id="@+id/img_table"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_alignParentStart="true"
@@ -48,12 +48,43 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:hint="Event Name"
-                        android:id="@+id/event_name"
+                        android:hint="Room Number"
+                        android:id="@+id/room_num"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18dp"
+                        android:textSize="16dp"
                         android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingStart="10dp"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_group"/>
+                    <TextView
+                        android:gravity="bottom"
+                        android:paddingStart="10dp"
+                        android:id="@+id/room_num_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11dp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:gravity="bottom"
+                        android:paddingStart="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="peoples"
+                        android:textSize="11dp"
+                        android:textColor="@color/colorBlack"/>
+
+
                 </LinearLayout>
                 <LinearLayout
                     android:paddingStart="10dp"
@@ -65,67 +96,24 @@
                         android:textSize="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tickets :"
-                        />
+                        android:text="Deposit  :"/>
                     <TextView
-                        android:hint="Ticket"
-                        android:id="@+id/event_ticket"
+                        android:hint="Deposit"
+                        android:id="@+id/room_deposit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlack"/>
                 </LinearLayout>
                 <LinearLayout
-                    android:paddingStart="10dp"
-                    android:gravity="left"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
-                    <TextView
-                        android:textSize="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Start Date  :"
-                       />
-                    <TextView
-                        android:hint="Start date"
-                        android:id="@+id/event_statedate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="10dp"
-                        android:textColor="@color/colorBlack"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:paddingStart="10dp"
-                    android:gravity="left"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
-                    <TextView
-                        android:textSize="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="End Date  :"
-                        />
-                    <TextView
-                        android:hint="End date"
-                        android:id="@+id/event_enddate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="10dp"
-                        android:textColor="@color/colorBlack"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_margin="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
                         android:paddingStart="10dp"
-                        android:hint="Event Price"
-                        android:id="@+id/event_price"
+                        android:hint="Table Price"
+                        android:id="@+id/room_price"
+                        android:text="Heoolo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="14dp"
@@ -133,7 +121,7 @@
                     <TextView
                         android:paddingStart="10dp"
                         android:hint="Special Price"
-                        android:id="@+id/event_specialprice"
+                        android:id="@+id/room_special_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="14dp"

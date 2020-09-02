@@ -30,7 +30,7 @@ public class ScreenKess extends Activity {
         btnbooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ScreenKess.this, BottomNavigationScreen.class);
+                Intent intent = new Intent(ScreenKess.this, BookingScreen.class);
                 startActivity(intent);
             }
         });
