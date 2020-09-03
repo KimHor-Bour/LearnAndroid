@@ -1,6 +1,7 @@
 package com.example.kessseller.XML;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,10 +17,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.example.kessseller.Data.DataItemBookingRoom;
 import com.example.kessseller.Data.DataRecyclerViewBooking;
 import com.example.kessseller.Adapter.RecyclerAdapterBooking;
+import com.example.kessseller.Java.BTSDataStatus;
+import com.example.kessseller.Java.BookingListener;
 import com.example.kessseller.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 public class BookingMyorder extends DialogFragment implements View.OnClickListener {
     LinearLayout linearLayout;
@@ -29,6 +35,33 @@ public class BookingMyorder extends DialogFragment implements View.OnClickListen
     List<DataRecyclerViewBooking.DataRecycler> datas;
     //    RecyclerAdapter recyclerAdapter;
     RecyclerView recyclerView;
+    Context context;
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        this.context=context;
+    }
+    private BookingListener bookingListener = new BookingListener() {
+        @Override
+        public void onItemClick1(DataRecyclerViewBooking.DataRecycler dataRecycler) {
+//            System.out.print("click");
+            BTSDataStatus btsDataStatus = new BTSDataStatus(context);
+            btsDataStatus.show(getFragmentManager(),BTSDataStatus.class.getSimpleName());
+
+        }
+
+        @Override
+        public void onItemClick(DataItemBookingRoom.DataItemRoom dataItemRoom) {
+
+        }
+
+        @Override
+        public void onAccept(Date date) {
+              };
+    };
+
+
     @Nullable
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable final Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.booking_myorder, container, false);

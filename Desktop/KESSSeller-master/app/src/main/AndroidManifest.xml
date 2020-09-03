@@ -24,7 +24,7 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
 <!--        </activity>-->
-        <activity android:name=".XML.BookingScreen" >
+        <activity android:name=".XML.BookingHistory" >
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
@@ -61,14 +61,16 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
         </activity>
-        <activity android:name=".XML.CreatItemTable" >
+        <activity android:name=".XML.CreateItemTable" >
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
         </activity>
-        <activity android:name=".XML.ITemTabType" />
+        <activity android:name=".XML.ItemTabType" />
+        <activity android:name=".XML.CreateItemEvent" />
+        <activity android:name=".XML.BookingScreen" />
 
     </application>
 

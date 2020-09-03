@@ -20,6 +20,7 @@ import java.util.List;
 public class ItemDataTypeEvent extends Fragment {
     RecyclerView recyclerView;
     List<DataItemBookingEvent.DataItemEvent> dataItemEvents;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
